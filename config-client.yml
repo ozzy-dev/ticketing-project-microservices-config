@@ -48,3 +48,18 @@ info:
     version: '@project.version@'
     spring-cloud-version: '@spring-cloud.version@'
     spring-boot-version: '@project.parent.version@'
+
+keycloak:
+  realm: cydeo-dev
+  auth-server-url: http://localhost:8080/auth
+  ssl-required: external
+  resource: ticketing-app
+  credentials:
+    secret: iveFFtMcWBiZxO0xLKsXpjUX7U6tmFQ9
+  bearer-only: true
+
+master:
+  user: admin
+  password: admin
+  realm: master
+  client: master-client
